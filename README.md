@@ -9,3 +9,4 @@
 <p> Bugs removed...</p>
 
 # started beta-0.1
+<p> NEWS! dependencies archive added</p>
