@@ -34,7 +34,7 @@ case "$1" in
     ;;
 
     banner)
-    fortune | cowsay hello exploiter
+    cowsay hello exploiter
     
     ;;
 
