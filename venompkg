@@ -1,0 +1,43 @@
+VENOMDIR="$HOME/.venompkg/"
+TEMPLATES="$VENOMDIR/templates"
+CACHE="$VENOMDIR/cache"
+
+mkdir -p "$TEMPLATES/windows" "$TEMPLATES/linux" "$TEMPLATES/android" "$TEMPLATES/random" "$CACHE"
+
+case "$1" in
+  search)
+   query="${@:2}"
+   echo "[-] Searching for: $query"
+   searchsploit "$query" | tee "$CACHE/last_search.txt"
+   ;;
+
+   install)
+   if [[ -z "$2" ]]; then echo "[!] venompkg install <path/ID of exploit/template>"; exit 1; fi
+    SRC="/usr/share/exploitdb/exploits/$2"
+    DEST="$TEMPLATES/$2"
+    echo "[~] installing: $SRC -> $DEST"
+    mkdir -p "$(dirname "$DEST")"
+    cp "$SRC" "$DEST" && echo "[+] Installed Success"
+    ;;
+    
+    list)
+    echo "[#] templates:"
+    find "$TEMPLATES" -type f
+    ;;
+
+    build)
+    TEMPLATE="$2"
+    shift 2
+    echo "[@] Using template: $TEMPLATE"
+    msfvenom -x "$TEMPLATE" "$@" -o "$3"
+    echo "[/] Payload saved in ./$3"
+    ;;
+
+    *)
+    echo "use:"
+    echo "  venompkg search <etc>"
+    echo "  venompkg list"
+    echo "  venompkg install <path/exploitdb>"
+    echo "  venompkg build <template> -p <payload> LHOST=... LPORT=..."
+    ;;
+esac
