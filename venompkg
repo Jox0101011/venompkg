@@ -33,6 +33,11 @@ case "$1" in
     echo "[/] Payload saved in ./$3"
     ;;
 
+    banner)
+    fortune | cowsay hello exploiter
+    
+    ;;
+
     init)
     $VENOMDIR/init/./start.sh
     ;;
@@ -42,10 +47,12 @@ case "$1" in
     ;;
 
     *)
+    cowsay hello exploiter to venompkg
     echo "use:"
     echo "  venompkg search <etc>"
     echo "  venompkg list"
     echo "  venompkg install <path/exploitdb>"
+    echo "  venompkg banner"
     echo "  venompkg build <template> -p <payload> LHOST=... LPORT=..."
     echo "  sudo venompkg init #in case permission denied; force manual"
     echo "  venompkg update"
