@@ -3,3 +3,5 @@
 <p> use: venompkg to help</p>
 
 # commit 2
+#UPDATE 0.3dev/pre-beta
+<p> init, update, banner is realized</p>
