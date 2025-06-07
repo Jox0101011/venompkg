@@ -1,3 +1,2 @@
-./path.sh
-./dep.sh
-.././venompkg
+~/.venompkg/init/./path.sh
+~/.venompkg/init/./dep.sh
