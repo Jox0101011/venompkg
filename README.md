@@ -10,3 +10,4 @@
 
 # started beta-0.1
 <p> NEWS! dependencies archive added</p>
+<p> Chatgpt added </p>
