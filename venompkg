@@ -44,6 +44,11 @@ case "$1" in
 
     update)
     $VENOMDIR/init/./dep.sh
+    git pull
+    ;;
+
+    chat)
+    tgpt "$2"
     ;;
 
     *)
@@ -56,5 +61,6 @@ case "$1" in
     echo "  venompkg build <template> -p <payload> LHOST=... LPORT=..."
     echo "  sudo venompkg init #in case permission denied; force manual"
     echo "  venompkg update"
+    echo "  venompkg chat ..."
     ;;
 esac
