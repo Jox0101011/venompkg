@@ -19,7 +19,7 @@ case "$1" in
     mkdir -p "$(dirname "$DEST")"
     cp "$SRC" "$DEST" && echo "[+] Installed Success"
     ;;
-    
+
     list)
     echo "[#] templates:"
     find "$TEMPLATES" -type f
