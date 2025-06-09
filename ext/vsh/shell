@@ -1,0 +1,24 @@
+VENOMSHDIR=$HOME/.venompkg/ext/vsh/
+source $VENOMSHDIR/core/pluginl
+source $VENOMSHDIR/core/config.sh
+source $VENOMSHDIR/core/commands.sh
+
+load_plugins
+
+echo "Welcome To VenomShell ;) tip; command: 'help' or '?' for help"
+
+while true; do
+  echo -n "venom> "
+  read -r input
+  cmd="${input%% *}"
+  args="${input#* }"
+
+  if declare -f "$cmd" > /dev/null; then
+    $cmd $args
+  elif command -v "$cmd" > /dev/null; then
+    $cmd $args 
+  else
+    echo "[-] Command '$cmd' not available."
+  fi
+done
+
