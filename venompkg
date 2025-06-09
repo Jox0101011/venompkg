@@ -48,8 +48,9 @@ case "$1" in
     ;;
     
     shell)
-    ext/./shell.sh
-      
+    ext/vsh/./shell
+    ;;
+
     chat)
     tgpt "$2"
     ;;
@@ -65,5 +66,6 @@ case "$1" in
     echo "  sudo venompkg init #in case permission denied; force manual"
     echo "  venompkg update"
     echo "  venompkg chat ..."
+    echo "  venompkg shell"
     ;;
 esac

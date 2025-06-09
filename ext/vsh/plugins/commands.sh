@@ -1,6 +1,6 @@
 plugin_name="Commands Basics"
 
-help() {
+helper_menu() {
 	command clear
 	echo ""
 	echo "Welcome to Vesh-0.2 !"
@@ -21,4 +21,10 @@ help_plugin() {
 
 clear() {
 	command clear
+}
+
+banner() {
+	figlet -f slant "PluginLoader"
+	echo "official loader plugin"
+	echo "by: jox0101011/emperor"
 }

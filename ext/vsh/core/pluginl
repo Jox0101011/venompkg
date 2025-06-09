@@ -4,5 +4,5 @@ load_plugins() {
     for plugin in plugins/*.sh; do
       source "$plugin"
       echo "[+] Plugin Loaded: $(basename $plugin)"
-      done
-  }
+    done
+}
