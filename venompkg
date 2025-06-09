@@ -46,7 +46,10 @@ case "$1" in
     $VENOMDIR/init/./dep.sh
     git pull
     ;;
-
+    
+    shell)
+    ext/./shell.sh
+      
     chat)
     tgpt "$2"
     ;;
