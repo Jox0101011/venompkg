@@ -11,4 +11,6 @@
 # started beta-0.1
 <p> NEWS! dependencies archive added</p>
 <p> Chatgpt added </p>
-#update 3.0
+# started update 0.3.0
+<p> new plugins update, plugin manager native </p>
+
