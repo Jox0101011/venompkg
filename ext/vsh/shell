@@ -4,7 +4,6 @@ HISTFILE=1000
 [[ -f $HISTFILE ]] && history -r "$HISTFILE"
 
 source $VENOMSHDIR/core/pluginl
-source $VENOMSHDIR/core/config.sh
 source $VENOMSHDIR/core/commands.sh
 
 load_plugins

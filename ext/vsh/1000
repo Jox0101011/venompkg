@@ -5,3 +5,13 @@ clear
 mkdir ola
 ls
 exit 0
+plugin_add Jox0101011 venompkg
+plugin_add Jox0101011/venompkg
+clear
+ls
+exit
+plugin
+plugin *
+plugin_add
+plugin
+plugin add
