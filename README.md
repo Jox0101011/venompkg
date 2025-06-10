@@ -14,3 +14,4 @@
 # started update 0.3.0
 <p> new plugins update, plugin manager native </p>
 <p> Plugins add's</p>
+# beta 0.3 Started git push -u origin main
