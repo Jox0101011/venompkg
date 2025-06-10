@@ -1,4 +1,7 @@
 VENOMSHDIR=$HOME/.venompkg/ext/vsh/
+HISTFILE="$HOME/.vsh_history"
+HISTFILE=1000
+[[ -f $HISTFILE ]] && history -r "$HISTFILE"
 
 source $VENOMSHDIR/core/pluginl
 source $VENOMSHDIR/core/config.sh
@@ -9,8 +12,9 @@ load_plugins
 echo "Welcome To VenomShell ;) tip; command: 'help_menu' for help"
 
 while true; do
-  echo -n "venom> "
-  read -r input
+
+  read -e -p $'\e[1;32mvsh >\e[0m ' input
+  [[ -n "$input" ]] && history -s "$input" && echo "$input" >> "$HISTFILE"
   cmd="${input%% *}"
   args="${input#* }"
 

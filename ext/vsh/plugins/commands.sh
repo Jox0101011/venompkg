@@ -6,7 +6,7 @@ TEMPLATES=$HOME/.venompkg/templates/
 help_menu() {
 	command clear
 	echo ""
-	echo "Welcome to Vesh-0.2 !"
+	echo "Welcome to Vesh-0.3 !"
 	echo ""
 	echo ""
 	echo ""
@@ -15,7 +15,7 @@ help_menu() {
 }
 
 help_plugin() {
-	echo "Vesh-0.2 !"
+	echo "Vesh-0.3 !"
 	echo "For add plugins:"
 	echo "1- create your plugin using example base"
 	echo "2- add in git"
