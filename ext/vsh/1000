@@ -1,1 +1,7 @@
 ls
+clear
+ls
+clear
+mkdir ola
+ls
+exit 0
