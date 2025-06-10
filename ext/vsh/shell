@@ -1,11 +1,12 @@
 VENOMSHDIR=$HOME/.venompkg/ext/vsh/
+
 source $VENOMSHDIR/core/pluginl
 source $VENOMSHDIR/core/config.sh
 source $VENOMSHDIR/core/commands.sh
 
 load_plugins
 
-echo "Welcome To VenomShell ;) tip; command: 'help' or '?' for help"
+echo "Welcome To VenomShell ;) tip; command: 'help_menu' for help"
 
 while true; do
   echo -n "venom> "

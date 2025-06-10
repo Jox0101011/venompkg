@@ -1,5 +1,6 @@
 PLUGIN_NAME="Example"
 PLUGIN_AUTHOR="Jox0101011"
+
 function example() {
 	echo "is a example ;)"
 }

@@ -1,6 +1,9 @@
-plugin_name="Commands Basics"
+PLUGIN_NAME="Commands Basics"
+PLUGIN_AUTHOR="Jox0101011"
 
-helper_menu() {
+TEMPLATES=$HOME/.venompkg/templates/
+
+help_menu() {
 	command clear
 	echo ""
 	echo "Welcome to Vesh-0.2 !"
@@ -8,6 +11,7 @@ helper_menu() {
 	echo ""
 	echo ""
 	echo "by: jox0101011/emperor"
+	sleep 1 && cat data/commands.txt
 }
 
 help_plugin() {
@@ -26,5 +30,18 @@ clear() {
 banner() {
 	figlet -f slant "PluginLoader"
 	echo "official loader plugin"
+	echo ""
+	echo ""
+	echo ""
+	echo ""
+	echo ""
 	echo "by: jox0101011/emperor"
+}
+chat() {
+	tgpt "$1"
+}
+
+list_templates() {
+	echo "[#] Templates:"
+	find "$TEMPLATES" -type f
 }
