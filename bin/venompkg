@@ -48,7 +48,7 @@ case "$1" in
     ;;
     
     shell)
-    cd ext/vsh/ && ./shell
+    cd $VENOMDIR/ext/vsh/ && ./shell
     ;;
 
     chat)
