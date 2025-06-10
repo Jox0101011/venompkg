@@ -12,7 +12,7 @@ echo "Welcome To VenomShell ;) tip; command: 'help_menu' for help"
 
 while true; do
 
-  read -e -p $'\e[1;32mVeSh-0.3 >\e[0m ' input
+  read -e -p $'\e[1;32mVeSh-0.4 >\e[0m ' input
   [[ -n "$input" ]] && history -s "$input" && echo "$input" >> "$HISTFILE"
   cmd="${input%% *}"
   args="${input#* }"
