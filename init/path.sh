@@ -1,1 +1,1 @@
-sudo ln -s ~/.venompkg/venompkg /usr/local/bin/venompkg
+mv ../../venompkg $HOME/.venompkg

@@ -1,4 +1,4 @@
-VENOMDIR="$HOME/.venompkg/"
+VENOMDIR="$HOME/.venompkg"
 TEMPLATES="$VENOMDIR/templates"
 CACHE="$VENOMDIR/cache"
 
